@@ -1,5 +1,10 @@
-name: Workflow Events
-on: push
+name: 02 - Workflow Events
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 0" # Runs every Sunday at midnight
 jobs:
   echo:
     runs-on: ubuntu-latest
