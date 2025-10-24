@@ -1,8 +1,5 @@
 name: 01 - Building Blocks
-on:
-  workflow_dispatch:
-    branches:
-      - main
+on: workflow_dispatch
 jobs:
   echo-hello:
     runs-on: ubuntu-latest
