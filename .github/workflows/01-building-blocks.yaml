@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-  pworkflow_dispatch:
+  workflow_dispatch:
     branches:
       - main
 jobs:
