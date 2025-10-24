@@ -5,9 +5,7 @@ jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
-      - name: Show the runner name
+      - name: Show the runner os
         run: |
-          echo "Runner: ${{ runner.name }}"
-      - name: Show the runner OS
-        run: |
+          echo "This job is running on an Ubuntu runner."
           echo "Runner OS: ${{ runner.os }}"
