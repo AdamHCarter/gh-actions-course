@@ -15,8 +15,19 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Show the runner os
+        #shell: bash  (useful to keep consistent scripting across OSes)
         run: |
           echo "This job is running on a Windows runner."
           echo "Runner Name: ${{ runner.name }}"
           echo "Runner OS: ${{ runner.os }}"
+          echo "Runner Arch: ${{ runner.arch }}"
+  macos-echo:
+    runs-on: macos-latest
+    steps:
+      - name: Show the runner os
+        # environment variable alternative
+        run: |
+          echo "This job is running on a macOS runner."
+          echo "Runner Name: ${{ runner.name }}"
+          echo "Runner OS: $RUNNER_OS"         
           echo "Runner Arch: ${{ runner.arch }}"
