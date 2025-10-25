@@ -16,6 +16,7 @@ jobs:
       OVERWRITTEN: 'I have been overwritten at the job level'
     steps:
       - name: Print Env Variables
+        #when using $ instead of ${{ env. }}, gets resolved after run
         env:
           STEP_VAR: "I am a step env var"
           step_var2: "I am another step var"
