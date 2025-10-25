@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: "22.13"
       - name: Install dependencies
-        run: npm install
+        run: npm ci
         working-directory: 04-using-actions/react-app
 
     # 0. Checkout the code from the repository
