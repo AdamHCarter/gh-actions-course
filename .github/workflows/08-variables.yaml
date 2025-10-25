@@ -38,7 +38,7 @@ jobs:
         run: |
           echo "Org var: ${{ vars.ORG_VAR || 'default value' }}"
           echo "Org ovverwritten var: ${{ vars.ORG_OVERWRITTEN_VAR || 'Undefined, default'  }}"
-          echo "Repo var: ${{ vars.REPOSITOR_VAR || 'default value if undefined' }}"
+          echo "Repo var: ${{ vars.REPOSITORY_VAR || 'default value if undefined' }}"
   echo-prod:
     runs-on: ubuntu-latest
     environment: prod
@@ -47,7 +47,7 @@ jobs:
         run: |
           echo "Org var: ${{ vars.ORG_VAR || env.UNDEFINED_DEFAULT }}"
           echo "Org ovverwritten var: ${{ vars.ORG_OVERWRITTEN_VAR || env.UNDEFINED_DEFAULT }}"
-          echo "Repo var: ${{ vars.REPOSITOR_VAR || env.UNDEFINED_DEFAULT }}"
+          echo "Repo var: ${{ vars.REPOSITORY_VAR || env.UNDEFINED_DEFAULT }}"
           echo "Environmement var: ${{ vars.TARGET_VAR }}"
   
     
