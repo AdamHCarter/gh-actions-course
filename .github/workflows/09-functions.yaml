@@ -11,7 +11,7 @@ jobs:
       - name: Failing step
         run: |
           echo "This step will fail"
-          exit 0
+          exit 1
       - name: I will be skipped
         if: ${{ success() }}
         run: |
