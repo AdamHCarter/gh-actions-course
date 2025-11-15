@@ -7,3 +7,5 @@ https://github.com/lm-academy/github-actions-course
 
 \*\*For the given example, see:
 https://github.com/lm-academy/github-actions-course-example-e2e
+
+test: dummy text
