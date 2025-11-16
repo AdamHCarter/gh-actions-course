@@ -8,11 +8,16 @@ on:
         default: false
         description: "Skip deployment and only print build output"
       target:
-        type: environment
+        type: environment        
+        required: true
         description: "Which environment the workflow will target"
       tag:
         type: choice
-        options: [ "v1", "v2", "v3" ]
+        options: 
+          - v1
+          - v2
+          - v3
+        default: v3
         description: "Release from which to build and deploy"
 
 jobs:
